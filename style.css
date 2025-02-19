@@ -83,3 +83,10 @@ img {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
+@media screen and (max-width: 768px) {
+    a {
+        font-size: .8rem;
+    }
+}
