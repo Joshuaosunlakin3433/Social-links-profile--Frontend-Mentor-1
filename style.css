@@ -1,0 +1,85 @@
+:root {
+  --bg-color: hsl(0, 0%, 8%);
+  --container: hsl(0, 0%, 12%);
+  --button: hsl(0, 0%, 20%);
+  --hover: hsl(75, 94%, 57%);
+  --text: hsl(0, 0%, 100%);
+}
+@font-face {
+  font-family: Inter;
+  src: url(./assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+}
+
+.parent-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container {
+  background: var(--container);
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+img {
+  border-radius: 50%;
+  width: 8rem;
+  height:8rem;
+  object-fit: cover;
+}
+
+
+.container > p {
+  font-size: 0.8rem;
+}
+
+.colored {
+  color: var(--hover);
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.btn-container {
+  display: block;
+}
+
+.btn-container > a {
+  display: block;
+  background-color: var(--button);
+  padding: 1rem 6rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+.btn-container > a:hover{
+    background: var(--hover);
+    cursor: pointer;
+}
+.btn-container > a:active{
+    color: var(--text);
+}
+.btn-container > a:visited{
+    color: var(--text);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
